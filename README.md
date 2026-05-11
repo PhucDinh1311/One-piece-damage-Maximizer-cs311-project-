@@ -1,12 +1,25 @@
 # One Piece Damage Maximizer
 
-This project is a turn-based combat damage optimizer inspired by the attacks in One Piece. The computer reads attack data from a CSV file and then determines the optimal method to spend limited mana, stamina and turns to accomplish the most damage.
+This project is a turn-based combat damage optimizer inspired by attacks from One Piece. The program reads attack data from a CSV file and determines the best combination of attacks to maximize total damage using limited mana, stamina, and turns.
 
+## What It Does
 
-What It Does ?
+- Reads attack information from actions.csv
+- Uses C++ classes, structs, vectors, and file processing
+- Uses recursion and backtracking to test different attack combinations
+- Finds the highest possible damage output
+- Displays the best attack combination on the screen
 
-- Reads attack info from actions.csv file
-- Works with data from files, C++ structures, classes, and vectors
-- Tests different attack combinations recursively and backwards - Finds the greatest damage that can be done - Shows the best combination on the screen# Files
+## Files
 
-* Execute the program ```bash g++ -std=c++17 main.cpp -o damage using DamageMaximizer.cpp Run!
+- main.cpp
+- DamageMaximizer.cpp
+- DamageMaximizer.h
+- actions.csv
+- Makefile
+- report.pdf
+
+## Compile
+
+```bash
+g++ -std=c++17 main.cpp DamageMaximizer.cpp -o damage
